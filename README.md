@@ -17,7 +17,7 @@ Pawn source files are compiled to a binary file for better runtime. The Pawn com
 ```
 main()
 {
-    print("¡Hola, mundo!");
+    print("Hello World!");
 }
 ```
 
