@@ -1,0 +1,138 @@
+/*  
+ *  Version: MPL 1.1
+ *  
+ *  The contents of this file are subject to the Mozilla Public License Version 
+ *  1.1 (the "License"); you may not use this file except in compliance with 
+ *  the License. You may obtain a copy of the License at 
+ *  http://www.mozilla.org/MPL/
+ *  
+ *  Software distributed under the License is distributed on an "AS IS" basis,
+ *  WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+ *  for the specific language governing rights and limitations under the
+ *  License.
+ *  
+ *  The Original Code is the YSI 2.0 SA:MP plugin.
+ *  
+ *  The Initial Developer of the Original Code is Alex "Y_Less" Cole.
+ *  Portions created by the Initial Developer are Copyright (C) 2008
+ *  the Initial Developer. All Rights Reserved.
+ *  
+ *  Contributor(s):
+ *  
+ *  Peter Beverloo
+ *  Marcus Bauer
+ */
+#define LOGPRINTF_0221				((logprintf_t)0x00476D90)
+#define LOGPRINTF_0222				((logprintf_t)0x00477020)
+#define LOGPRINTF_0223				((logprintf_t)3)
+
+#define CREATE_OBJECT_0221			((DWORD)0x004B34D4)
+#define SET_OBJECT_POS_0221			((DWORD)0x004B34DC)
+#define SET_OBJECT_ROT_0221			((DWORD)0x004B34E4)
+#define GET_OBJECT_POS_0221			((DWORD)0x004B34EC)
+#define GET_OBJECT_ROT_0221			((DWORD)0x004B34F4)
+#define IS_VALID_OBJECT_0221		((DWORD)0x004B34FC)
+#define DESTROY_OBJECT_0221			((DWORD)0x004B3504)
+#define MOVE_OBJECT_0221			((DWORD)0x004B350C)
+#define STOP_OBJECT_0221			((DWORD)0x004B3514)
+#define CREATE_PLAYER_OBJECT_0221	((DWORD)0x004B351C)
+#define SET_PLAYER_OBJECT_POS_0221	((DWORD)0x004B3524)
+#define SET_PLAYER_OBJECT_ROT_0221	((DWORD)0x004B352C)
+#define GET_PLAYER_OBJECT_POS_0221	((DWORD)0x004B3534)
+#define GET_PLAYER_OBJECT_ROT_0221	((DWORD)0x004B353C)
+#define IS_VALID_PLAYER_OBJECT_0221	((DWORD)0x004B3544)
+#define DESTROY_PLAYER_OBJECT_0221	((DWORD)0x004B354C)
+#define MOVE_PLAYER_OBJECT_0221		((DWORD)0x004B3554)
+#define STOP_PLAYER_OBJECT_0221		((DWORD)0x004B355C)
+#define ATTACH_OBJECT_0221			((DWORD)0x004B3564)
+#define ATTACH_PLAYER_OBJECT_0221	((DWORD)0x004B356C)
+
+#define CREATE_OBJECT_0222			((DWORD)0x004B34D4)
+#define SET_OBJECT_POS_0222			((DWORD)0x004B34DC)
+#define SET_OBJECT_ROT_0222			((DWORD)0x004B34E4)
+#define GET_OBJECT_POS_0222			((DWORD)0x004B34EC)
+#define GET_OBJECT_ROT_0222			((DWORD)0x004B34F4)
+#define IS_VALID_OBJECT_0222		((DWORD)0x004B34FC)
+#define DESTROY_OBJECT_0222			((DWORD)0x004B3504)
+#define MOVE_OBJECT_0222			((DWORD)0x004B350C)
+#define STOP_OBJECT_0222			((DWORD)0x004B3514)
+#define CREATE_PLAYER_OBJECT_0222	((DWORD)0x004B351C)
+#define SET_PLAYER_OBJECT_POS_0222	((DWORD)0x004B3524)
+#define SET_PLAYER_OBJECT_ROT_0222	((DWORD)0x004B352C)
+#define GET_PLAYER_OBJECT_POS_0222	((DWORD)0x004B3534)
+#define GET_PLAYER_OBJECT_ROT_0222	((DWORD)0x004B353C)
+#define IS_VALID_PLAYER_OBJECT_0222	((DWORD)0x004B3544)
+#define DESTROY_PLAYER_OBJECT_0222	((DWORD)0x004B354C)
+#define MOVE_PLAYER_OBJECT_0222		((DWORD)0x004B3554)
+#define STOP_PLAYER_OBJECT_0222		((DWORD)0x004B355C)
+#define ATTACH_OBJECT_0222			((DWORD)0x004B3564)
+#define ATTACH_PLAYER_OBJECT_0222	((DWORD)0x004B356C)
+
+#define CREATE_OBJECT_0223			((DWORD)3)
+#define SET_OBJECT_POS_0223			((DWORD)3)
+#define SET_OBJECT_ROT_0223			((DWORD)3)
+#define GET_OBJECT_POS_0223			((DWORD)3)
+#define GET_OBJECT_ROT_0223			((DWORD)3)
+#define IS_VALID_OBJECT_0223		((DWORD)3)
+#define DESTROY_OBJECT_0223			((DWORD)3)
+#define MOVE_OBJECT_0223			((DWORD)3)
+#define STOP_OBJECT_0223			((DWORD)3)
+#define CREATE_PLAYER_OBJECT_0223	((DWORD)3)
+#define SET_PLAYER_OBJECT_POS_0223	((DWORD)3)
+#define SET_PLAYER_OBJECT_ROT_0223	((DWORD)3)
+#define GET_PLAYER_OBJECT_POS_0223	((DWORD)3)
+#define GET_PLAYER_OBJECT_ROT_0223	((DWORD)3)
+#define IS_VALID_PLAYER_OBJECT_0223	((DWORD)3)
+#define DESTROY_PLAYER_OBJECT_0223	((DWORD)3)
+#define MOVE_PLAYER_OBJECT_0223		((DWORD)3)
+#define STOP_PLAYER_OBJECT_0223		((DWORD)3)
+#define ATTACH_OBJECT_0223			((DWORD)3)
+#define ATTACH_PLAYER_OBJECT_0223	((DWORD)3)
+
+#define SQLITE_FUNCTIONS_0221		((AMX_NATIVE_INFO *)0x004AF168)
+#define SQLITE_FUNCTIONS_0222		((AMX_NATIVE_INFO *)0x004AF168)
+#define SQLITE_FUNCTIONS_0223		((AMX_NATIVE_INFO *)3)
+
+#define NETGAME_0221				((void *)0x004BD560)
+#define NETGAME_0222				((void *)0x004BD568)
+#define NETGAME_0223				((void *)3)
+
+#define NETGAME_PROCESS_0221		((DWORD)0x0047AD40)
+#define NETGAME_PROCESS_0222		((DWORD)0x0047AFA0)
+#define NETGAME_PROCESS_0223		((DWORD)3)
+
+#define NETGAME_CALL_0221			((DWORD)0x0047AD88)
+#define NETGAME_CALL_0222			((DWORD)0x0047AFE8)
+#define NETGAME_CALL_0223			((DWORD)3)
+
+#define CSTREAM__CONS_0221			((void *)0x00448810)
+#define CSTREAM__CONS_0222			((void *)0x00448820)
+#define CSTREAM__CONS_0223			((void *)3)
+
+#define CSTREAM__DEST_0221			((void *)0x00448920)
+#define CSTREAM__DEST_0222			((void *)0x00448930)
+#define CSTREAM__DEST_0223			((void *)3)
+
+#define CSTREAM__WRITE_0221			((void *)0x00448E70)
+#define CSTREAM__WRITE_0222			((void *)0x00448E80)
+#define CSTREAM__WRITE_0223			((void *)3)
+
+#define COBJECTS__INIT_0221			((DWORD)0x00478230)
+#define COBJECTS__INIT_0222			((DWORD)0x004784C0)
+#define COBJECTS__INIT_0223			((DWORD)3)
+
+#define COBJECTS__DEL_0221			((DWORD)0x00480CC0)
+#define COBJECTS__DEL_0222			((DWORD)0x00480F70)
+#define COBJECTS__DEL_0223			((DWORD)3)
+
+#define COBJECTS__REINIT_0221		((DWORD)0x0047A73A)
+#define COBJECTS__REINIT_0222		((DWORD)0x0047A9CA)
+#define COBJECTS__REINIT_0223		((DWORD)3)
+
+#define COBJECTS__INITFP_0221		((DWORD)0x0047AA20)
+#define COBJECTS__INITFP_0222		((DWORD)0x0047ACB0)
+#define COBJECTS__INITFP_0223		((DWORD)3)
+
+#define G_F_RESTART_WAIT_TIME_0221	((float *)0x004A5198)
+#define G_F_RESTART_WAIT_TIME_0222	((float *)0x004A5178)
+#define G_F_RESTART_WAIT_TIME_0223	((float *)3)

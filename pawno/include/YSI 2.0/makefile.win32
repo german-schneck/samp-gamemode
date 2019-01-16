@@ -1,0 +1,22 @@
+# This file is a makefile which you can use for systems
+# running Windows. Programs like cMake and NMake are capable
+# of using these files to generate misc. project files.
+
+all:
+	options build link
+
+options:
+	set OPTIONS=/O2 /Od /D "WIN32" /D "_WINDOWS" /D "_USRDLL" /D "_WINDLL" /Gm /EHsc /RTC1 /MDd /Fo"out\\" /W3 /nologo /c /Wp64 /ZI /TP
+	set LINKOPTIONS=/OUT:"YSI.dll" /INCREMENTAL:NO /NOLOGO /MANIFEST:NO /MAP:"YSI.map" /SUBSYSTEM:CONSOLE /MACHINE:X86 
+
+build: options
+	cl %OPTIONS% .\*.cpp
+	cl %OPTIONS% ..\SDK\amx\*.c
+	cl %OPTIONS% ..\SDK\*.cpp 
+
+link: options
+	link %LINKOPTIONS% kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib out\*.obj
+
+clean:
+	del /q out\*.*
+	del /q YSI.dll YSI.map *.idb
