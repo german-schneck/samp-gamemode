@@ -52,7 +52,7 @@ Highlights:
 - Rent a car / motorbike
 - Car modification system.
 - Bank system, deposits and transfers.
-- Anti-trap system.
+- Anti-cheating system.
 - Fire extinguishing
 -
 ... `and more (I don't count them because it's difficult for me after so many years)`
